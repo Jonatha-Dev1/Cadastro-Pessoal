@@ -14,6 +14,8 @@ Alguns campos apenas é permitido inserir números, como por exemplo: cpf, cep e
 
 Quando inserido os dados dos campos obrogatórios a validação será realizada e aparexcerá uma alert para o usario que seu cadastro foi realizado.
 
+link do site hospedado: https://cd-users.netlify.app/
+
 
 
 Links de Pesquisa:
