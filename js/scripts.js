@@ -1,16 +1,4 @@
-let submit = document.getElementById('btn-submit')
-
-submit.addEventListener('click', function alertSubmit(){
-    alert('Obrigado! Seu cadastro foi realizado com sucesso.')
-})
-
-
-
-
-
-
-
-/*class Validator {
+class Validator {
 
   constructor() {
     this.validations = [
@@ -82,8 +70,10 @@ let submit = document.getElementById('btn-submit');
 
 let validator = new Validator();
 
-submit.addEventListener('click', function(e) {
+submit.addEventListener('click', function(e)  {
   e.preventDefault();
 
   validator.validate(form);
-});*/
+
+  alert('Obrigado! Seu cadastro foi realizado com sucesso.')
+});
