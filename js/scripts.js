@@ -9,6 +9,12 @@ class Validator {
   
   validate(form) {
 
+    let currentValidations = document.querySelectorAll('form .error-validation');
+
+    if(currentValidations.length) {
+      this.cleanValidations(currentValidations);
+    }
+
     let inputs = form.getElementsByTagName('input');
     
     let inputsArray = [...inputs];
@@ -62,6 +68,10 @@ class Validator {
 
   }
 
+  cleanValidations(validations) {
+    validations.forEach(el => el.remove());
+  }
+
 }
 
 let form = document.getElementById('register-form');
@@ -75,5 +85,4 @@ submit.addEventListener('click', function(e)  {
 
   validator.validate(form);
 
-  alert('Obrigado! Seu cadastro foi realizado com sucesso.')
 });
